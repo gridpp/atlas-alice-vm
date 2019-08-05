@@ -1,2 +1,0 @@
-CONDOR_HOST: ##user_data_option_condor_host##
-ARC_QUEUE: ##user_data_option_arc_queue##
