@@ -1,9 +1,9 @@
-ALLOW_DAEMON: 127.0.0.1, IPADDRESS, aipanda136.cern.ch, aipanda130.cern.ch, aipanda132.cern.ch, aipanda135.cern.ch, aipanda138.cern.ch
-CONDOR_HOST: aipanda138.cern.ch
-COLLECTOR_HOST: aipanda138.cern.ch:20618
+ALLOW_DAEMON: 127.0.0.1, IPADDRESS, aipanda136.cern.ch, aipanda130.cern.ch, aipanda132.cern.ch, aipanda135.cern.ch, aipanda138.cern.ch, aipanda025.cern.ch
+CONDOR_HOST = aipanda025.cern.ch
+COLLECTOR_HOST = $(CONDOR_HOST):20615?sock=collector
 CONDOR_ADMIN: root@aipanda138.cern.ch:20618
 DISABLE_AUTHENTICATION_IP_CHECK: TRUE
-HOSTALLOW_DAEMON: IPADDRESS, aipanda136.cern.ch, aipanda130.cern.ch, aipanda132.cern.ch, aipanda135.cern.ch, aipanda138.cern.ch
+HOSTALLOW_DAEMON: IPADDRESS, aipanda136.cern.ch, aipanda130.cern.ch, aipanda132.cern.ch, aipanda135.cern.ch, aipanda138.cern.ch, aipanda025.cern.ch
 SEC_DEFAULT_AUTHENTICATION_METHODS: GSI,FS
 SEC_CLIENT_AUTHENTICATION_METHODS: GSI,FS
 SEC_DAEMON_AUTHENTICATION_METHODS: GSI,FS
